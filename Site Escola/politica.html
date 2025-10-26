@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H1 — Política</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#d50000;--ink:#222;--muted:#666;--bg:#f6f6f6;--card:#fff;--sep:#e6e6e6;--radius:12px}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:'Open Sans',system-ui;color:var(--ink);background:var(--bg)}
+header{background:var(--brand);color:#fff;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.top{max-width:1120px;margin:0 auto;padding:14px 16px;display:flex;gap:18px;align-items:center}
+.logo{font-weight:800;font-size:28px}
+nav a{color:#fff;text-decoration:none;font-weight:600;margin-right:14px}nav a:hover{opacity:.9}
+main{max-width:960px;margin:22px auto;padding:0 16px}
+.card{background:var(--card);border:1px solid var(--sep);border-radius:var(--radius);padding:18px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.kicker{color:var(--brand);font-weight:800;text-transform:uppercase;font-size:.8rem;letter-spacing:.04em}
+h1{font-size:36px;margin:6px 0 12px}
+.grid{display:grid;gap:12px;grid-template-columns:1fr 1fr} @media(max-width:800px){.grid{grid-template-columns:1fr}}
+.item{background:var(--card);border:1px solid var(--sep);border-radius:12px;overflow:hidden}
+.item img{width:100%;height:180px;object-fit:cover;display:block}
+.item div{padding:12px}
+footer{color:#6a6a6a;text-align:center;padding:18px 0}
+.active{opacity:1}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="logo">H1</div>
+    <nav aria-label="Seções">
+      <a class="active" href="politica.html">Política</a>
+      <a href="economia.html">Economia</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="cotidiano.html">Cotidiano</a>
+      <a href="index.html" style="margin-left:auto">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="card">
+    <div class="kicker">Política</div>
+    <h1>Hoje em Brasília: café, plenário e memes</h1>
+    <p>Nos bastidores, fontes confirmam que o projeto mais polêmico do dia foi… decidir quem lava a caneca do café da comissão. Resultado: criado o <b>Plano Nacional do Escorredor de Louça</b>. Impacto fiscal: zero; impacto na paz do gabinete: infinito.</p>
+  </section>
+
+  <div class="grid" style="margin-top:12px">
+    <article class="item">
+      <img loading="lazy" src="assets/img/categorias/politica-01.webp" alt="Microfone e paletó">
+      <div>
+        <h3>Placar do dia</h3>
+        <p>Oposição 1 × 1 Situação: empate técnico e muito GIF no WhatsApp.</p>
+      </div>
+    </article>
+    <article class="item">
+      <img loading="lazy" src="assets/img/categorias/politica-02.webp" alt="Palácio em perspectiva">
+      <div>
+        <h3>Agenda oficial</h3>
+        <p>Reunião às 9h, coletiva às 10h e almoço às 12h (o único que nunca atrasa).</p>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>© H1 — Política. Voltar para <a href="index.html">Home</a>.</footer>
+</body>
+</html>
