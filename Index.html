@@ -4,17 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>H1 — Notícias</title>
-<!-- Favicon em SVG (moderno) -->
-<link rel="icon" type="image/svg+xml" href="assets/icons/h1-favicon.svg">
 
-<!-- Fallbacks PNG -->
-<link rel="icon" sizes="192x192" href="assets/icons/h1-192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/h1-180.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/h1-favicon.svg">
+  <link rel="icon" sizes="192x192" href="assets/icons/h1-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/h1-180.png">
+  <meta name="theme-color" content="#d50000">
 
-<!-- Cor do navegador em mobile -->
-<meta name="theme-color" content="#d50000">
-
-  <!-- Tipografia e tema combinando com pesquisa.html -->
+  <!-- Tipografia e tema -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -52,14 +49,33 @@
     .hero a{color:inherit;text-decoration:none}
     .hero a:hover{text-decoration:underline}
 
-    /* cards laterais e secundários */
+    /* cards */
     .cards{display:grid;gap:12px}
     .card{position:relative;display:block;border:1px solid var(--sep);border-radius:12px;overflow:hidden;background:#000}
     .card img{width:100%;height:160px;object-fit:cover;display:block;opacity:.9;transition:transform .35s ease, opacity .35s ease}
-    .card .overlay{position:absolute;inset:0;display:flex;align-items:flex-end;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.65));padding:14px;color:#fff}
-    .card .title{font-weight:800;font-size:18px;line-height:1.2}
-    .card .tag{font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#ffd6d6;margin-bottom:4px}
     .card:hover img{transform:scale(1.05);opacity:1}
+    .card .overlay{
+      position:absolute;inset:0;display:flex;align-items:flex-end;
+      padding:16px;color:#fff;
+      background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.65));
+    }
+    .card .tag{
+      font-size:.78rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+      color:#ffe2e2;margin-bottom:6px;text-shadow:0 1px 1px rgba(0,0,0,.6);
+    }
+    /* >>> TÍTULO SOBRE A IMAGEM (estilo G1) <<< */
+    .card .title{
+      font-weight:800;
+      font-size:22px;
+      line-height:1.18;
+      letter-spacing:-.2px;
+      margin:0;
+      /* sombras empilhadas para legibilidade */
+      text-shadow:
+        0 1px 0 rgba(0,0,0,.75),
+        0 2px 4px rgba(0,0,0,.55),
+        0 0 1px rgba(0,0,0,.45);
+    }
 
     /* lista de matérias */
     .list{display:grid;gap:12px;margin-top:12px}
@@ -69,10 +85,20 @@
     .item a:hover{text-decoration:underline}
     .item p{margin:0;color:#444}
 
-    /* widgets */
+    /* widgets (modernizados — chips no lugar de links azuis) */
     .aside{display:flex;flex-direction:column;gap:14px}
     .widget{background:var(--card);border:1px solid var(--sep);border-radius:var(--radius);padding:16px}
-    .widget h4{margin:0 0 8px;font-size:18px}
+    .widget h4{margin:0 0 10px;font-size:18px}
+    .widget ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 12px;border:1px solid var(--sep);border-radius:999px;
+      background:#f3f3f3;color:var(--ink);text-decoration:none;font-weight:700;font-size:.9rem;
+      transition:all .2s ease;
+    }
+    .chip:hover{background:#fff;border-color:var(--brand);color:var(--brand);box-shadow:0 2px 8px rgba(213,0,0,.12)}
+    .widget p{margin:0;color:#444}
+    .widget a{color:inherit;text-decoration:none}
 
     /* rodapé */
     footer{border-top:1px solid var(--sep);margin-top:24px}
@@ -84,7 +110,6 @@
     <div class="top">
       <div class="logo">H1</div>
       <nav aria-label="Seções">
-        <!-- ATIVADO: apontando para as páginas das abas -->
         <a href="politica.html">Política</a>
         <a href="economia.html">Economia</a>
         <a href="mundo.html">Mundo</a>
@@ -109,14 +134,14 @@
         <div class="meta">Por Redação H1 — Belford Roxo (RJ) • 26/10/2025 09h44</div>
       </article>
 
-      <!-- Cards secundários (linkam para seções da matéria) -->
+      <!-- Cards com título sobre a imagem (estilo G1) -->
       <div class="cards" style="grid-template-columns:repeat(2,1fr);margin-top:12px">
         <a class="card" href="pesquisa.html#6-resultados">
           <img src="assets/img/cards/card-metodologia.webp" alt="Rede de água">
           <div class="overlay">
             <div>
               <div class="tag">Indicadores</div>
-              <div class="title">Água 95% vs. esgoto 6,6%: o abismo</div>
+              <h3 class="title">Água 95% × Esgoto 6,6% — o contraste</h3>
             </div>
           </div>
         </a>
@@ -125,21 +150,21 @@
           <div class="overlay">
             <div>
               <div class="tag">Projeto</div>
-              <div class="title">Cronograma da pesquisa (simultâneo)</div>
+              <h3 class="title">Cronograma da pesquisa (simultâneo)</h3>
             </div>
           </div>
         </a>
       </div>
 
-      <!-- Lista curta (apenas a mesma pauta em formatos) -->
+      <!-- Lista curta -->
       <div class="list">
         <div class="item">
           <h3><a href="pesquisa.html#7-discussao">Discussão: por que o esgoto não avança?</a></h3>
-          <p>Perdas na água, subfinanciamento e governança frágil explicam a estagnação do esgotamento na Baixada.</p>
+          <p>Infraestrutura defasada, perdas de água e investimentos lentos.</p>
         </div>
         <div class="item">
-          <h3><a href="pesquisa.html#9-recomendacoes">Recomendações práticas</a></h3>
-          <p>Redução de perdas, ligações domiciliares assistidas e conselho municipal de saneamento.</p>
+          <h3><a href="pesquisa.html#9-recomendacoes">Recomendações e soluções</a></h3>
+          <p>Plano municipal, fiscalização e transparência como base.</p>
         </div>
       </div>
     </section>
@@ -148,39 +173,38 @@
     <aside class="aside">
       <div class="widget">
         <h4>Seções</h4>
-        <ul style="margin:0;padding-left:18px">
-          <!-- ATIVADO: atalhos para as abas -->
-          <li><a href="politica.html">Política</a></li>
-          <li><a href="economia.html">Economia</a></li>
-          <li><a href="mundo.html">Mundo</a></li>
-          <li><a href="cotidiano.html">Cotidiano</a></li>
+        <ul>
+          <li><a class="chip" href="politica.html">Política</a></li>
+          <li><a class="chip" href="economia.html">Economia</a></li>
+          <li><a class="chip" href="mundo.html">Mundo</a></li>
+          <li><a class="chip" href="cotidiano.html">Cotidiano</a></li>
         </ul>
       </div>
 
       <div class="widget">
         <h4>Atalhos da matéria</h4>
-        <ul style="margin:0;padding-left:18px">
-          <li><a href="pesquisa.html#1-introducao">Introdução</a></li>
-          <li><a href="pesquisa.html#5-cronograma-execucao">Cronograma</a></li>
-          <li><a href="pesquisa.html#6-resultados">Resultados</a></li>
-          <li><a href="pesquisa.html#10-referencias">Referências</a></li>
+        <ul>
+          <li><a class="chip" href="pesquisa.html#1-introducao">Introdução</a></li>
+          <li><a class="chip" href="pesquisa.html#5-cronograma-execucao">Cronograma</a></li>
+          <li><a class="chip" href="pesquisa.html#6-resultados">Resultados</a></li>
+          <li><a class="chip" href="pesquisa.html#10-referencias">Referências</a></li>
         </ul>
       </div>
 
       <div class="widget">
-        <h4>Previsão (hoje)</h4>
+        <h4>Clima (hoje)</h4>
         <p>Belford Roxo — Nublado, 25 °C</p>
       </div>
 
       <div class="widget">
-        <h4>Sobre o projeto</h4>
-        <p>Trabalho escolar — CEFET/RJ (3AEST).</p>
+        <h4>Sobre o H1</h4>
+        <p>Paródia do G1 feita como trabalho escolar. Com dados reais na reportagem principal.</p>
       </div>
     </aside>
   </main>
 
   <footer>
-    <div class="foot">© H1 Notícias — 2025.</div>
+    <div class="foot">© 2025 H1 Notícias — Cópia descarada do G1 portal de notícias • CEFET/RJ</div>
   </footer>
 </body>
 </html>
