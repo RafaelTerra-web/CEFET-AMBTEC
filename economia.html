@@ -1,19 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <!-- Favicon em SVG (moderno) -->
-<link rel="icon" type="image/svg+xml" href="assets/icons/h1-favicon.svg">
-
+<!-- Favicon em SVG (moderno) -->
+<link href="assets/icons/h1-favicon.svg" rel="icon" type="image/svg+xml"/>
 <!-- Fallbacks PNG -->
-<link rel="icon" sizes="192x192" href="assets/icons/h1-192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/h1-180.png">
-
+<link href="assets/icons/h1-192.png" rel="icon" sizes="192x192"/>
+<link href="assets/icons/h1-180.png" rel="apple-touch-icon" sizes="180x180"/>
 <!-- Cor do navegador em mobile -->
-<meta name="theme-color" content="#d50000">
-
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="#d50000" name="theme-color"/>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>H1 — Economia</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--brand:#d50000;--ink:#222;--muted:#666;--bg:#f6f6f6;--card:#fff;--sep:#e6e6e6;--radius:12px}
 *{box-sizing:border-box}html,body{margin:0}body{font-family:'Open Sans',system-ui;color:var(--ink);background:var(--bg)}
@@ -30,85 +28,50 @@ h1{font-size:36px;margin:6px 0 12px}
 .item img{width:100%;height:180px;object-fit:cover;display:block}
 .item div{padding:12px}
 footer{color:#6a6a6a;text-align:center;padding:18px 0}
+
+/* ====== Ajustes de mídia nas matérias ====== */
+.article-img{width:100%;max-width:100%;height:auto;border-radius:6px;display:block;margin:14px auto;}
+.audio-box{background:#f8f8f8;border-left:4px solid #d70000;padding:14px 16px;margin:22px 0;border-radius:6px;}
+.audio-box audio{width:100%;outline:none;}
+.audio-caption{font-size:.85rem;color:#555;margin-top:6px;}
 </style>
 </head>
 <body>
 <header>
-  <div class="top">
-    <div class="logo">H1</div>
-    <nav aria-label="Seções">
-      <a href="politica.html">Política</a>
-      <a class="active" href="economia.html">Economia</a>
-      <a href="mundo.html">Mundo</a>
-      <a href="cotidiano.html">Cotidiano</a>
-      <a href="index.html" style="margin-left:auto">Home</a>
-    </nav>
-  </div>
+<div class="top">
+<div class="logo">H1</div>
+<nav aria-label="Seções">
+<a href="politica.html">Política</a>
+<a class="active" href="economia.html">Economia</a>
+<a href="mundo.html">Mundo</a>
+<a href="cotidiano.html">Cotidiano</a>
+<a href="index.html" style="margin-left:auto">Home</a>
+</nav>
+</div>
 </header>
-
 <main>
-  <section class="card">
-    <div class="kicker">Economia</div>
-    <h1>Saneamento básico e impactos socioeconômicos na megalópole fluminense</h1>
-    <p><strong>Resumo:</strong> A literatura mostra que o saneamento insuficiente eleva gastos em saúde, reduz produtividade, degrada o ambiente urbano e perpetua pobreza. Investir em água e esgoto gera retorno econômico de longo prazo.</p>
-    <p class="byline"><b>Rafael Peçanha Terra, Arthur Caetano, Gabriel Nogueira e Guilherme Cortes</b> — CEFET/RJ • 3AEST</p>
-  </section>
-
-  <article class="card" style="margin-top:14px;line-height:1.65">
-    <h2 id="1-introducao">1. Introdução</h2>
-    <p>
-      Na Região Metropolitana do Rio de Janeiro, déficits de saneamento se sobrepõem a desigualdades de renda
-      e à ocupação irregular do solo. Essa combinação produz um ciclo de vulnerabilidade: bairros sem rede de esgoto
-      registram mais doenças, maior perda de dias de trabalho e escolaridade e menor valorização imobiliária.
-    </p>
-
-    <h2 id="2-evidencias">2. Evidências socioeconômicas</h2>
-    <p>
-      Estudos sobre a megalópole fluminense destacam que a ausência de coleta e tratamento de esgoto
-      aumenta internações por doenças de veiculação hídrica e arboviroses, pressionando o SUS e os orçamentos municipais.
-      Além do custo direto, há custo indireto com afastamentos do trabalho, queda de rendimento escolar
-      e perda de atratividade econômica de áreas degradadas.
-    </p>
-
-    <div class="grid" style="margin-top:12px">
-      <article class="item">
-        <img loading="lazy" src="assets/img/categorias/economia-01.webp" alt="Ilustração econômica">
-        <div>
-          <h3>Saúde e gasto público</h3>
-          <p>Menos saneamento → mais doença → mais internação. Municípios pobres gastam mais com tratamento do que com prevenção.</p>
-        </div>
-      </article>
-      <article class="item">
-        <img loading="lazy" src="assets/img/categorias/economia-02.webp" alt="Ilustração de orçamento">
-        <div>
-          <h3>Produtividade e cidade</h3>
-          <p>Enchentes, valões e rios poluídos desvalorizam imóveis, afastam comércio e travam desenvolvimento local.</p>
-        </div>
-      </article>
-    </div>
-
-    <h2 id="3-saneamento-investimento">3. Saneamento como investimento</h2>
-    <p>
-      O saneamento é infraestrutura de retorno alto: melhora indicadores de saúde, valoriza o território
-      e cria condições para atividades produtivas. A universalização prevista no Marco do Saneamento
-      (Lei 14.026/2020) depende de planejamento regional, fiscalização de contratos e prioridade para áreas
-      de maior risco socioambiental.
-    </p>
-
-    <h2 id="4-relacao-belford-roxo">4. Relação com Belford Roxo</h2>
-    <p>
-      Em Belford Roxo, a baixa cobertura de esgoto e problemas de drenagem contribuem para enchentes recorrentes
-      e altos índices de doenças hídricas. Do ponto de vista econômico, isso significa perda de renda familiar
-      e maior dependência de serviços públicos. Investir no município é estratégia de redução de desigualdade metropolitana.
-    </p>
-
-    <h2 id="5-referencias">Referências (síntese)</h2>
-    <p>
-      Artigos do dossiê Ambitec sobre saneamento e impactos socioeconômicos na RMRJ, 2024–2025.
-    </p>
-  </article>
+<section class="card">
+<div class="kicker">Economia</div>
+<h1>Mercado acorda otimista; meu boleto, nem tanto</h1>
+<p>Dólar cai, café sobe, e o preço do pão continua um suspense digno de série. Analistas falam em “volatilidade controlada”; a gente traduz: <i>calma, mas confia com moderação</i>.</p>
+</section>
+<div class="grid" style="margin-top:12px">
+<article class="item">
+<img alt="Gráfico crescendo" class="article-img" loading="lazy" src="assets/img/pollution/canal-pol-02.webp"/>
+<div>
+<h3>Microeconomia do lanche</h3>
+<p>Substituir pão de queijo por biscoito pode melhorar o PIB do seu bolso em 3%. Estudo caseiro, mas convincente.</p>
+</div>
+</article>
+<article class="item">
+<img alt="Carteira com moedas" class="article-img" loading="lazy" src="assets/img/pollution/corrego-esgoto-01.webp"/>
+<div>
+<h3>Educação financeira</h3>
+<p>Regra 50/30/20: 50% contas, 30% desejos, 20% poupança. Se inverter, chama de “modo férias”.</p>
+</div>
+</article>
+</div>
 </main>
-
 <footer>© H1 — Economia <a href="index.html">Home</a>.</footer>
 </body>
 </html>

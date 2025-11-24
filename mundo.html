@@ -1,19 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <!-- Favicon em SVG (moderno) -->
-<link rel="icon" type="image/svg+xml" href="assets/icons/h1-favicon.svg">
-
+<!-- Favicon em SVG (moderno) -->
+<link href="assets/icons/h1-favicon.svg" rel="icon" type="image/svg+xml"/>
 <!-- Fallbacks PNG -->
-<link rel="icon" sizes="192x192" href="assets/icons/h1-192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/h1-180.png">
-
+<link href="assets/icons/h1-192.png" rel="icon" sizes="192x192"/>
+<link href="assets/icons/h1-180.png" rel="apple-touch-icon" sizes="180x180"/>
 <!-- Cor do navegador em mobile -->
-<meta name="theme-color" content="#d50000">
-
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="#d50000" name="theme-color"/>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>H1 — Mundo</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--brand:#d50000;--ink:#222;--muted:#666;--bg:#f6f6f6;--card:#fff;--sep:#e6e6e6;--radius:12px}
 *{box-sizing:border-box}html,body{margin:0}body{font-family:'Open Sans',system-ui;color:var(--ink);background:var(--bg)}
@@ -30,81 +28,50 @@ h1{font-size:36px;margin:6px 0 12px}
 .item img{width:100%;height:180px;object-fit:cover;display:block}
 .item div{padding:12px}
 footer{color:#6a6a6a;text-align:center;padding:18px 0}
+
+/* ====== Ajustes de mídia nas matérias ====== */
+.article-img{width:100%;max-width:100%;height:auto;border-radius:6px;display:block;margin:14px auto;}
+.audio-box{background:#f8f8f8;border-left:4px solid #d70000;padding:14px 16px;margin:22px 0;border-radius:6px;}
+.audio-box audio{width:100%;outline:none;}
+.audio-caption{font-size:.85rem;color:#555;margin-top:6px;}
 </style>
 </head>
 <body>
 <header>
-  <div class="top">
-    <div class="logo">H1</div>
-    <nav aria-label="Seções">
-      <a href="politica.html">Política</a>
-      <a href="economia.html">Economia</a>
-      <a class="active" href="mundo.html">Mundo</a>
-      <a href="cotidiano.html">Cotidiano</a>
-      <a href="index.html" style="margin-left:auto">Home</a>
-    </nav>
-  </div>
+<div class="top">
+<div class="logo">H1</div>
+<nav aria-label="Seções">
+<a href="politica.html">Política</a>
+<a href="economia.html">Economia</a>
+<a class="active" href="mundo.html">Mundo</a>
+<a href="cotidiano.html">Cotidiano</a>
+<a href="index.html" style="margin-left:auto">Home</a>
+</nav>
+</div>
 </header>
-
 <main>
-  <section class="card">
-    <div class="kicker">Mundo / Meio ambiente</div>
-    <h1>Falta de saneamento e impacto ambiental em rios urbanos</h1>
-    <p><strong>Resumo:</strong> O lançamento de esgoto in natura e resíduos sólidos em rios urbanos causa eutrofização, mau cheiro, morte de fauna aquática e amplia riscos sanitários. A recuperação desses rios exige saneamento, drenagem e gestão de resíduos.</p>
-    <p class="byline"><b>Rafael Peçanha Terra, Arthur Caetano, Gabriel Nogueira e Guilherme Cortes</b> — CEFET/RJ • 3AEST</p>
-  </section>
-
-  <article class="card" style="margin-top:14px;line-height:1.65">
-    <h2 id="1-introducao">1. Introdução</h2>
-    <p>
-      Em cidades densas, rios e canais deveriam funcionar como elementos de equilíbrio ambiental.
-      Porém, sem rede coletora e tratamento suficiente, eles recebem esgoto doméstico, lixo e efluentes,
-      virando “valões” que atravessam bairros inteiros.
-    </p>
-
-    <h2 id="2-processo">2. Como ocorre a poluição</h2>
-    <p>
-      O esgoto carrega matéria orgânica e patógenos. Ao entrar no rio, consome oxigênio dissolvido,
-      favorece proliferação de algas e bactérias e modifica toda a cadeia ecológica.
-      Resíduos sólidos obstruem calhas, intensificam enchentes e espalham contaminantes.
-    </p>
-
-    <div class="grid" style="margin-top:12px">
-      <article class="item">
-        <img loading="lazy" src="assets/img/categorias/mundo-01.webp" alt="Ilustração ambiental">
-        <div>
-          <h3>Degradação ecológica</h3>
-          <p>Rios poluídos perdem biodiversidade, apresentam água escura e odores fortes e tornam-se fontes de vetores.</p>
-        </div>
-      </article>
-      <article class="item">
-        <img loading="lazy" src="assets/img/categorias/mundo-02.webp" alt="Ilustração de rios urbanos">
-        <div>
-          <h3>Risco à saúde</h3>
-          <p>Contato com água contaminada aumenta casos de diarreia, hepatite e leptospirose, sobretudo em enchentes.</p>
-        </div>
-      </article>
-    </div>
-
-    <h2 id="3-caso-rmrj">3. Reflexos na RMRJ</h2>
-    <p>
-      Na Região Metropolitana do Rio, muitos rios que deságuam na Baía de Guanabara recebem carga contínua de esgoto.
-      A combinação entre ocupação de margens, drenagem insuficiente e coleta irregular de lixo mantém a poluição crônica.
-      Isso afeta pesca, lazer, mobilidade e a própria imagem urbana da metrópole.
-    </p>
-
-    <h2 id="4-conclusao">4. Conclusão</h2>
-    <p>
-      Recuperar rios urbanos passa por universalizar coleta e tratamento de esgoto,
-      melhorar drenagem e impedir descarte irregular de resíduos. Sem isso, a cidade perde serviços ecossistêmicos
-      e amplia desigualdades ambientais.
-    </p>
-
-    <h2 id="5-referencias">Referência</h2>
-    <p>Artigo Ambitec sobre impactos ambientais do saneamento em rios urbanos, 2024.</p>
-  </article>
+<section class="card">
+<div class="kicker">Mundo</div>
+<h1>Planeta gira, gente corre: atualizações globais</h1>
+<p>De eclipse a campeonato de pedra-papel-tesoura na Islândia, o mundo segue imprevisível — e fascinante.</p>
+</section>
+<div class="grid" style="margin-top:12px">
+<article class="item">
+<img alt="Mapa-múndi colorido" class="article-img" loading="lazy" src="assets/img/pollution/canal-pol-02.webp"/>
+<div>
+<h3>Clima</h3>
+<p>Em alguns lugares nevando, em outros sol de rachar. Conclusão: leve casaco e protetor. Sempre.</p>
+</div>
+</article>
+<article class="item">
+<img alt="Avião no céu" class="article-img" loading="lazy" src="assets/img/pollution/corrego-esgoto-01.webp"/>
+<div>
+<h3>Viagens</h3>
+<p>Promoção de milhas: compre 10, ganhe vontade de viajar e memória cheia de fotos de nuvem.</p>
+</div>
+</article>
+</div>
 </main>
-
 <footer>© H1 — Notícias mundo afora com leveza. <a href="index.html">Home</a>.</footer>
 </body>
 </html>

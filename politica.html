@@ -1,19 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <!-- Favicon em SVG (moderno) -->
-<link rel="icon" type="image/svg+xml" href="assets/icons/h1-favicon.svg">
-
+<!-- Favicon em SVG (moderno) -->
+<link href="assets/icons/h1-favicon.svg" rel="icon" type="image/svg+xml"/>
 <!-- Fallbacks PNG -->
-<link rel="icon" sizes="192x192" href="assets/icons/h1-192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/h1-180.png">
-
+<link href="assets/icons/h1-192.png" rel="icon" sizes="192x192"/>
+<link href="assets/icons/h1-180.png" rel="apple-touch-icon" sizes="180x180"/>
 <!-- Cor do navegador em mobile -->
-<meta name="theme-color" content="#d50000">
-
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="#d50000" name="theme-color"/>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>H1 — Política</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--brand:#d50000;--ink:#222;--muted:#666;--bg:#f6f6f6;--card:#fff;--sep:#e6e6e6;--radius:12px}
 *{box-sizing:border-box}html,body{margin:0}body{font-family:'Open Sans',system-ui;color:var(--ink);background:var(--bg)}
@@ -31,80 +29,50 @@ h1{font-size:36px;margin:6px 0 12px}
 .item div{padding:12px}
 footer{color:#6a6a6a;text-align:center;padding:18px 0}
 .active{opacity:1}
+
+/* ====== Ajustes de mídia nas matérias ====== */
+.article-img{width:100%;max-width:100%;height:auto;border-radius:6px;display:block;margin:14px auto;}
+.audio-box{background:#f8f8f8;border-left:4px solid #d70000;padding:14px 16px;margin:22px 0;border-radius:6px;}
+.audio-box audio{width:100%;outline:none;}
+.audio-caption{font-size:.85rem;color:#555;margin-top:6px;}
 </style>
 </head>
 <body>
 <header>
-  <div class="top">
-    <div class="logo">H1</div>
-    <nav aria-label="Seções">
-      <a class="active" href="politica.html">Política</a>
-      <a href="economia.html">Economia</a>
-      <a href="mundo.html">Mundo</a>
-      <a href="cotidiano.html">Cotidiano</a>
-      <a href="index.html" style="margin-left:auto">Home</a>
-    </nav>
-  </div>
+<div class="top">
+<div class="logo">H1</div>
+<nav aria-label="Seções">
+<a class="active" href="politica.html">Política</a>
+<a href="economia.html">Economia</a>
+<a href="mundo.html">Mundo</a>
+<a href="cotidiano.html">Cotidiano</a>
+<a href="index.html" style="margin-left:auto">Home</a>
+</nav>
+</div>
 </header>
-
 <main>
-  <section class="card">
-    <div class="kicker">Política / Saúde pública</div>
-    <h1>Doenças relacionadas ao saneamento ambiental nos municípios fluminenses</h1>
-    <p><strong>Resumo:</strong> A análise sócio-espacial de internações mostra forte associação entre falta de saneamento e doenças de veiculação hídrica e arboviroses. Belford Roxo aparece entre os municípios com maior carga proporcional de internações.</p>
-    <p class="byline"><b>Rafael Peçanha Terra, Arthur Caetano, Gabriel Nogueira e Guilherme Cortes</b> — CEFET/RJ • 3AEST</p>
-  </section>
-
-  <article class="card" style="margin-top:14px;line-height:1.65">
-    <h2 id="1-introducao">1. Introdução</h2>
-    <p>
-      Doenças ligadas ao saneamento surgem quando água potável, coleta de esgoto e drenagem são insuficientes.
-      Elas atingem mais fortemente bairros pobres e áreas sujeitas a enchentes, onde o contato com água contaminada é frequente.
-    </p>
-
-    <h2 id="2-resultados">2. Resultados principais</h2>
-    <p>
-      No recorte metropolitano, o período 2010–2022 registra dezenas de milhares de internações por diarreia,
-      dengue e outras doenças associadas a saneamento inadequado. Belford Roxo apresenta alta participação dessas internações
-      em relação ao tamanho de sua população, evidenciando risco sanitário elevado.
-    </p>
-
-    <div class="grid" style="margin-top:12px">
-      <article class="item">
-        <img loading="lazy" src="assets/img/categorias/politica-01.webp" alt="Ilustração política">
-        <div>
-          <h3>Saúde como política pública</h3>
-          <p>Investir em saneamento é prevenção: reduz internações e libera recursos para outras áreas sociais.</p>
-        </div>
-      </article>
-      <article class="item">
-        <img loading="lazy" src="assets/img/categorias/politica-02.webp" alt="Ilustração institucional">
-        <div>
-          <h3>Desigualdade territorial</h3>
-          <p>As maiores taxas se concentram na Baixada Fluminense, onde o déficit de rede e drenagem é histórico.</p>
-        </div>
-      </article>
-    </div>
-
-    <h2 id="3-implicacoes">3. Implicações para gestão</h2>
-    <p>
-      A distribuição espacial das doenças indica que políticas de saneamento devem priorizar territórios críticos,
-      combinando obras de rede, controle de ligações clandestinas, limpeza de canais e educação sanitária.
-      A articulação entre prefeitura, concessionárias e estado é central para a universalização.
-    </p>
-
-    <h2 id="4-conclusao">4. Conclusão</h2>
-    <p>
-      Os dados reforçam que saneamento é determinante social da saúde.
-      Para Belford Roxo, enfrentar o déficit de água, esgoto e drenagem significa reduzir diretamente a carga de doença,
-      melhorar a qualidade de vida e romper o ciclo de vulnerabilidade metropolitana.
-    </p>
-
-    <h2 id="5-referencias">Referência</h2>
-    <p>Artigos Ambitec sobre doenças relacionadas ao saneamento ambiental, 2024–2025.</p>
-  </article>
+<section class="card">
+<div class="kicker">Política</div>
+<h1>Hoje em Brasília: café, plenário e memes</h1>
+<p>Nos bastidores, fontes confirmam que o projeto mais polêmico do dia foi… decidir quem lava a caneca do café da comissão. Resultado: criado o <b>Plano Nacional do Escorredor de Louça</b>. Impacto fiscal: zero; impacto na paz do gabinete: infinito.</p>
+</section>
+<div class="grid" style="margin-top:12px">
+<article class="item">
+<img alt="Microfone e paletó" class="article-img" loading="lazy" src="assets/img/pollution/canal-pol-02.webp"/>
+<div>
+<h3>Placar do dia</h3>
+<p>Oposição 1 × 1 Situação: empate técnico e muito GIF no WhatsApp.</p>
+</div>
+</article>
+<article class="item">
+<img alt="Palácio em perspectiva" class="article-img" loading="lazy" src="assets/img/pollution/corrego-esgoto-01.webp"/>
+<div>
+<h3>Agenda oficial</h3>
+<p>Reunião às 9h, coletiva às 10h e almoço às 12h (o único que nunca atrasa).</p>
+</div>
+</article>
+</div>
 </main>
-
 <footer>© H1 — Política. Voltar para <a href="index.html">Home</a>.</footer>
 </body>
 </html>

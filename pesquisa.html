@@ -1,22 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pesquisa Sanitária – Belford Roxo | H1</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Pesquisa Sanitária – Belford Roxo | H1</title>
 <!-- Favicon em SVG (moderno) -->
-<link rel="icon" type="image/svg+xml" href="assets/icons/h1-favicon.svg">
-
+<link href="assets/icons/h1-favicon.svg" rel="icon" type="image/svg+xml"/>
 <!-- Fallbacks PNG -->
-<link rel="icon" sizes="192x192" href="assets/icons/h1-192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/h1-180.png">
-
+<link href="assets/icons/h1-192.png" rel="icon" sizes="192x192"/>
+<link href="assets/icons/h1-180.png" rel="apple-touch-icon" sizes="180x180"/>
 <!-- Cor do navegador em mobile -->
-<meta name="theme-color" content="#d50000">
-
-  <!-- Tipografia e tema (combina com o index) -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<meta content="#d50000" name="theme-color"/>
+<!-- Tipografia e tema (combina com o index) -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
     :root{
       --brand:#d50000;
       --ink:#222;
@@ -94,116 +92,153 @@
     .refs a:hover{text-decoration:underline}
 
     footer{color:#6a6a6a;text-align:center;padding:18px 0}
-  </style>
+  
+/* ====== Ajustes de mídia nas matérias ====== */
+.article-img{width:100%;max-width:100%;height:auto;border-radius:6px;display:block;margin:14px auto;}
+.audio-box{background:#f8f8f8;border-left:4px solid #d70000;padding:14px 16px;margin:22px 0;border-radius:6px;}
+.audio-box audio{width:100%;outline:none;}
+.audio-caption{font-size:.85rem;color:#555;margin-top:6px;}
+</style>
 </head>
 <body>
-  <header>
-    <div class="top">
-      <div class="logo">H1</div>
-      <nav aria-label="Seções">
-        <a href="index.html">Início</a>
-        <a href="politica.html">Política</a>
-        <a href="economia.html">Economia</a>
-        <a href="mundo.html">Mundo</a>
-        <a href="cotidiano.html">Cotidiano</a>
-      </nav>
-    </div>
-  </header>
+<header>
+<div class="top">
+<div class="logo">H1</div>
+<nav aria-label="Seções">
+<a href="index.html">Início</a>
+<a href="politica.html">Política</a>
+<a href="economia.html">Economia</a>
+<a href="mundo.html">Mundo</a>
+<a href="cotidiano.html">Cotidiano</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="card">
+<div class="kicker">Artigo científico — CEFET/RJ • 3AEST</div>
+<h1 class="title">Saneamento básico em Belford Roxo: análise crítica dos serviços de água e esgotamento sanitário</h1>
+<p class="subtitle">Situação atual, impactos na saúde pública e perspectivas de universalização.</p>
+<div class="audio-box">
+<h3 style="margin-bottom:6px;color:#d70000;font-size:1.1rem">🎧 Morador relata problemas de saneamento</h3>
+<audio controls="">
+<source src="assets/audio/depoimento-morador.mp3" type="audio/mpeg"/>
+    Seu navegador não suporta reprodução de áudio.
+  </audio>
+<p class="audio-caption">Morador descreve ao patrão as dificuldades enfrentadas pela comunidade devido à falta de saneamento.</p>
+</div>
 
-  <main>
-  <section class="card">
-    <div class="kicker">Artigo científico — CEFET/RJ • 3AEST</div>
-    <h1 class="title">Saneamento básico em Belford Roxo: análise crítica dos serviços de água e esgotamento sanitário</h1>
-    <p class="subtitle">Diagnóstico, impactos sanitários e perspectivas de universalização no município.</p>
-    <p class="byline"><b>Rafael Peçanha Terra, Arthur Caetano, Gabriel Nogueira e Guilherme Cortes</b> — Belford Roxo (RJ) • Outubro/2025</p>
-  </section>
-
-  <article class="card" style="margin-top:14px;line-height:1.65">
-    <h3 id="resumo">Resumo</h3>
-    <p>
-      Este artigo reúne evidências bibliográficas e documentais sobre o saneamento básico em Belford Roxo (RJ),
-      articulando dados oficiais da RMRJ com estudos específicos da Baixada Fluminense. A análise aponta
-      déficits estruturais em água e esgoto, relação direta com doenças de veiculação hídrica e
-      necessidade de políticas integradas para alcançar a universalização.
-    </p>
-
-    <h3 id="1-introducao">1. Introdução</h3>
-    <p>
-      Belford Roxo integra a Baixada Fluminense e apresenta urbanização acelerada e desigual. A falta de rede de esgoto,
-      drenagem insuficiente e manejo irregular de resíduos resultam em valões poluídos, enchentes e contaminação hídrica.
-      Em áreas vulneráveis, parte da população depende de soluções individuais (poços e fossas),
-      ampliando exposição a contaminantes.
-    </p>
-
-    <h3 id="2-metodologia">2. Metodologia</h3>
-    <p>
-      A pesquisa tem caráter bibliográfico, utilizando cinco artigos científicos selecionados na disciplina Ambitec,
-      além de indicadores do IBGE, SNIS/SINISA e bases de saúde pública (DATASUS). Os achados foram organizados em
-      três eixos: (i) cobertura de água e esgoto por bairro; (ii) impactos ambientais; (iii) impactos na saúde.
-    </p>
-
-    <h3 id="3-diagnostico">3. Diagnóstico do saneamento em Belford Roxo</h3>
-    <p>
-      O mapeamento metropolitano identifica bairros do município em prioridade máxima para saneamento,
-      com baixos índices simultâneos de abastecimento por rede geral e de coleta de esgoto.
-      A desigualdade aparece também dentro do município, com setores atendidos e outros dependentes de ligações precárias.
-    </p>
-
-    <div class="grid" style="margin-top:12px">
-      <article class="item">
-        <img loading="lazy" src="assets/img/pollution/rios-lixo-01.webp" alt="Rio com lixo e poluição">
-        <div>
-          <h3>Poluição por resíduos</h3>
-          <p>Resíduos sólidos descartados em canais e margens intensificam obstruções e enchentes.</p>
-        </div>
-      </article>
-      <article class="item">
-        <img loading="lazy" src="assets/img/pollution/corrego-esgoto-01.webp" alt="Córrego com esgoto">
-        <div>
-          <h3>Esgoto a céu aberto</h3>
-          <p>Sem rede coletora, o esgoto doméstico é lançado em valões e rios urbanos.</p>
-        </div>
-      </article>
-      <article class="item">
-        <img loading="lazy" src="assets/img/pollution/canal-pol-02.webp" alt="Canal poluído">
-        <div>
-          <h3>Drenagem insuficiente</h3>
-          <p>Canais assoreados e poluídos reduzem capacidade de escoamento e aumentam alagamentos.</p>
-        </div>
-      </article>
-    </div>
-
-    <h3 id="4-impactos">4. Impactos ambientais e na saúde</h3>
-    <p>
-      A falta de tratamento de esgoto aumenta carga orgânica em rios que deságuam na Baía de Guanabara,
-      provocando eutrofização e perda de biodiversidade. Do ponto de vista sanitário, há
-      alta incidência de diarreias infecciosas e arboviroses, com Belford Roxo entre os municípios
-      de maior número proporcional de internações na RMRJ.
-    </p>
-
-    <h3 id="5-perspectivas">5. Perspectivas de universalização</h3>
-    <p>
-      O Marco Legal do Saneamento (Lei 14.026/2020) estabelece metas de universalização até 2033.
-      Para Belford Roxo, isso envolve expansão de rede, modernização operacional,
-      controle e regularização de ligações, além de soluções para áreas informais.
-    </p>
-
-    <h3 id="6-conclusao">6. Conclusão</h3>
-    <p>
-      A síntese dos artigos evidencia que saneamento em Belford Roxo é problema estrutural,
-      com expressão territorial clara. Políticas públicas orientadas por diagnóstico por bairro,
-      somadas a investimento contínuo, são a via para reduzir doenças, enchentes e desigualdades socioambientais.
-    </p>
-
-    <h3 id="7-referencias">Referências</h3>
-    <ol>
-      <li>AROUCA, M. A.; CARDOSO, D.; STRAUCH, J. C. M. (2024).</li>
-      <li>Artigo sobre COVs/SCOVs no Rio Estrela (Saracuruna – RJ).</li>
-      <li>Artigo sobre impactos socioeconômicos do saneamento na megalópole fluminense.</li>
-      <li>Artigo sobre impactos ambientais em rios urbanos.</li>
-      <li>Artigo sobre doenças relacionadas ao saneamento ambiental no RJ.</li>
-    </ol>
-  </article>
+<p class="byline"><b>Rafael Peçanha Terra, Arthur Caetano, Gabriel Nogueira e Guilherme Cortes</b> — Belford Roxo (RJ) • Outubro/2025</p>
+<article>
+<h3 id="resumo">Resumo</h3>
+<p>Este artigo apresenta um diagnóstico do saneamento básico em Belford Roxo (RJ), com ênfase nos serviços de abastecimento de água e esgotamento sanitário, seus impactos à saúde e as iniciativas recentes. A análise, de caráter bibliográfico e documental, indica avanço no acesso à água, mas grande atraso na coleta e no tratamento de esgoto, com implicações socioambientais relevantes.</p>
+<h3 id="1-introducao">1. Introdução</h3>
+<p>Belford Roxo integra a Baixada Fluminense, região que historicamente concentra déficits de infraestrutura urbana. O saneamento básico – água, esgoto, resíduos sólidos e drenagem – é determinante para a saúde e a qualidade de vida. A combinação de crescimento urbano desordenado e subfinanciamento do setor explica os indicadores persistentemente baixos em esgotamento sanitário.</p>
+<h3 id="problema">2. Problema e justificativa</h3>
+<p><b>Problema:</b> Quais os efeitos dos déficits de saneamento em Belford Roxo na saúde e no ambiente e quais caminhos aceleram a universalização?</p>
+<p><b>Justificativa:</b> Consolidar dados recentes, evidenciar riscos e registrar intervenções em curso contribui para decisões públicas, controle social e planejamento local.</p>
+<h3 id="objetivos">3. Objetivos</h3>
+<ul>
+<li>Levantamento e sistematização de indicadores de água, esgoto, resíduos e drenagem;</li>
+<li>Relação dos déficits com agravos de saúde e impactos ambientais;</li>
+<li>Registro de investimentos/projetos e lacunas de governança;</li>
+<li>Propostas para curto e médio prazos rumo à universalização.</li>
+</ul>
+<h3 id="metodologia">4. Metodologia</h3>
+<p>Pesquisa bibliográfica e documental com base em relatórios setoriais, bases públicas e artigos. Os indicadores foram consolidados e apresentados em gráficos e quadros para comunicação jornalístico-científica.</p>
+<h3 id="5-cronograma-execucao">5. Cronograma (execução simultânea)</h3>
+<table aria-label="Cronograma" class="tbl">
+<thead><tr><th>Etapa</th><th>Período</th><th>Responsáveis</th></tr></thead>
+<tbody>
+<tr><td>Leitura e revisão</td><td>01/10–31/10</td><td>Todos</td></tr>
+<tr><td>Anotações e fichamento</td><td>01/10–31/10</td><td>Gabriel e Arthur</td></tr>
+<tr><td>Material base (dados)</td><td>01/10–20/10</td><td>Rafael e Guilherme</td></tr>
+<tr><td>Produção (redação)</td><td>15/10–20/11</td><td>Todos</td></tr>
+<tr><td>Revisão e edição</td><td>01/10–30/11</td><td>Orientadores</td></tr>
+<tr><td>Entrega final</td><td>30/11</td><td>Equipe</td></tr>
+</tbody>
+</table>
+<!-- Timeline simultânea -->
+<div aria-label="Linha do tempo (Out → Nov/2025)" class="timeline">
+<div class="tl-grid">
+<div class="tl-row"><div class="tl-label">Leitura</div><div class="tl-bar"><span class="tl-span" style="width:50%"></span></div></div>
+<div class="tl-row"><div class="tl-label">Anotações</div><div class="tl-bar"><span class="tl-span" style="width:50%"></span></div></div>
+<div class="tl-row"><div class="tl-label">Material base</div><div class="tl-bar"><span class="tl-span" style="width:33%"></span></div></div>
+<div class="tl-row"><div class="tl-label">Produção</div><div class="tl-bar"><span class="tl-span" style="width:80%"></span></div></div>
+<div class="tl-row"><div class="tl-label">Revisão</div><div class="tl-bar"><span class="tl-span rev" style="width:100%"></span></div></div>
+</div>
+<div class="legend"><span><i class="i-exec"></i>Execução</span><span><i class="i-rev"></i>Revisão</span></div>
+</div>
+<h3 id="6-resultados">6. Resultados principais</h3>
+<p>Os números indicam alto acesso à água tratada e baixíssimos índices de coleta e tratamento de esgoto. A coleta de resíduos é ampla e a drenagem urbana é parcial. Abaixo, a comparação visual (percentual da população atendida).</p>
+<!-- Barras comparativas responsivas -->
+<div aria-label="Comparação de coberturas em %" class="bars" role="img">
+<div class="bar-row">
+<div class="bar-label">Água potável</div>
+<div class="track"><span class="fill" data-val="95,11" style="width:95.11%"></span></div>
+</div>
+<div class="bar-row">
+<div class="bar-label">Coleta de esgoto</div>
+<div class="track"><span class="fill" data-val="6" style="width:6.59%"></span></div>
+</div>
+<div class="bar-row">
+<div class="bar-label">Tratamento de esgoto (do gerado)</div>
+<div class="track gray"><span class="fill" data-val="9,94" style="width:9.94%"></span></div>
+</div>
+<div class="bar-row">
+<div class="bar-label">Resíduos sólidos (coleta)</div>
+<div class="track"><span class="fill" data-val="98,05" style="width:98.05%"></span></div>
+</div>
+<div class="bar-row">
+<div class="bar-label">Drenagem urbana</div>
+<div class="track"><span class="fill" data-val="51,41" style="width:51.41%"></span></div>
+</div>
+</div>
+<!-- BLOCO DE IMAGENS (encaixadas) -->
+<div aria-label="Imagens de poluição e esgoto" class="media two">
+<figure>
+<img alt="Trecho de rio urbano com acúmulo de lixo nas margens" class="article-img" height="426" loading="lazy" src="assets/img/pollution/rios-lixo-01.webp" width="640"/>
+<figcaption><b>Rios sob pressão.</b> Lixo urbano e ligações clandestinas agravam a poluição e a proliferação de vetores.</figcaption>
+</figure>
+<figure>
+<img alt="Córrego com esgoto a céu aberto próximo a área residencial" class="article-img" height="426" loading="lazy" src="assets/img/pollution/corrego-esgoto-01.webp" width="640"/>
+<figcaption><b>Esgoto in natura.</b> Sem coleta e tratamento, efluentes contaminam corpos hídricos e atingem a saúde pública.</figcaption>
+</figure>
+</div>
+<h3 id="7-discussao">7. Discussão</h3>
+<p>Há contraste: a maioria das casas tem água, mas o sistema sofre com perdas e intermitências; o esgoto segue sem destino adequado para grande parte da população. O quadro reforça a urgência de expandir redes de coleta, elevar o tratamento e reduzir perdas, com metas transparentes e monitoradas pela sociedade.</p>
+<!-- IMAGEM ÚNICA COM LEGENDA (opcional) -->
+<div aria-label="Imagem ilustrativa de poluição em canal" class="media">
+<figure>
+<img alt="Canal urbano com água escura e resíduos flutuantes" class="article-img" height="720" loading="lazy" src="assets/img/pollution/canal-pol-02.webp" width="1280"/>
+<figcaption><b>Canal urbano.</b> A poluição difusa se acumula em períodos de chuva, exigindo drenagem e manejo de resíduos integrados.</figcaption>
+</figure>
+</div>
+<h3 id="8-conclusao">8. Conclusão</h3>
+<p>Belford Roxo permanece entre os piores desempenhos nacionais em esgotamento sanitário. Os investimentos recentes são promissores, porém insuficientes para universalizar no ritmo exigido. Priorizar esgoto (coleta + tratamento) e controle de perdas na água é o caminho mais imediato para ganhos de saúde e ambiente.</p>
+<h3 id="9-recomendacoes">9. Recomendações</h3>
+<ul>
+<li>Revisar o plano municipal com metas anuais e divulgação pública;</li>
+<li>Acelerar obras de esgoto e ligação domiciliar assistida em áreas críticas;</li>
+<li>Programa agressivo de redução de perdas de água e manutenção ativa;</li>
+<li>Conselho e Fundo Municipal de Saneamento para garantir controle social;</li>
+<li>Integração com políticas de saúde, habitação e drenagem urbana.</li>
+</ul>
+<h3 id="10-referencias">10. Referências (com links)</h3>
+<div class="refs">
+<ol>
+<li>Instituto Trata Brasil. <em>Release – Ranking do Saneamento 2025</em>. Jul/2025. Disponível em: <a href="https://tratabrasil.org.br" rel="noopener" target="_blank">tratabrasil.org.br</a>.</li>
+<li>Instituto Trata Brasil. <em>Release – Ranking do Saneamento 2024</em>. Mar/2024. Disponível em: <a href="https://tratabrasil.org.br" rel="noopener" target="_blank">tratabrasil.org.br</a>.</li>
+<li>InfoSanBas. <em>Belford Roxo – RJ</em>. 2020. Disponível em: <a href="https://infosanbas.org.br/municipio/belford-roxo-rj/" rel="noopener" target="_blank">infosanbas.org.br</a>.</li>
+<li>Águas do Rio. <em>Novas bombas vão melhorar o fornecimento de água para 176 mil pessoas em Belford Roxo</em>. 18/08/2025. Disponível em: <a href="https://aguasdorio.com.br/" rel="noopener" target="_blank">aguasdorio.com.br</a>.</li>
+<li>CONAMA. Resolução nº 001/1986 (definições de impacto ambiental). DOU, 17/02/1986.</li>
+</ol>
+</div>
+</article>
+<hr/>
+<footer>
+        Trabalho acadêmico — Projetos Integradores (CEFET/RJ, 3AEST). Créditos: Rafael Peçanha Terra (Coordenação Geral), Arthur Caetano(Coleta de dados), Gabriel Nogueira(Tratamento de dados e Visualização) e Guilherme Cortes(Coleta de dados e revisão metodológica).
+      </footer>
+</section>
 </main>
 </body>
 </html>
